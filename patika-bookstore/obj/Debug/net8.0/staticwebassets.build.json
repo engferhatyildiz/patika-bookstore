@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eF1/Z/jVuJ0FXaRZYz6rWiKvs1ufcRuPaIvNFjrRP1w=",
+  "Source": "patika-bookstore",
+  "BasePath": "_content/patika-bookstore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

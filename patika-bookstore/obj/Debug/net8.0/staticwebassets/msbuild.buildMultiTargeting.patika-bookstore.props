@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\patika-bookstore.props" />
+</Project>
