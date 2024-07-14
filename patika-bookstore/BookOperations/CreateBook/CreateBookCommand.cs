@@ -1,10 +1,12 @@
-﻿using patika_bookstore.DBOperations;
+﻿using AutoMapper;
+using patika_bookstore.DBOperations;
 
 namespace patika_bookstore.BookOperations.CreateBook;
 
-public class CreateBookCommand(BookStoreDbContext dbContext)
+public class CreateBookCommand(BookStoreDbContext dbContext, IMapper mapper)
 {
     public CreateBookModel Model { get; set; }
+
     public void Handle()
     {
         var book = dbContext.Books.SingleOrDefault(x => x.Title == Model.Title);
@@ -14,18 +16,12 @@ public class CreateBookCommand(BookStoreDbContext dbContext)
             throw new InvalidOperationException("The book is already exist");
         }
 
-        book = new Book
-        {
-            Title = Model.Title,
-            PublishDate = Model.PublishDate,
-            PageCount = Model.PageCount,
-            GenreId = Model.GenreId
-        };
+        book = mapper.Map<Book>(Model);
 
         dbContext.Books.Add(book);
         dbContext.SaveChanges();
     }
-    
+
     public class CreateBookModel
     {
         public string Title { get; set; }

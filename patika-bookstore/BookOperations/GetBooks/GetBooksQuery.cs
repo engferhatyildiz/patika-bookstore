@@ -1,26 +1,15 @@
-﻿using patika_bookstore.Common;
+﻿using AutoMapper;
 using patika_bookstore.DBOperations;
 
 namespace patika_bookstore.BookOperations.GetBooks;
 
-public class GetBooksQuery(BookStoreDbContext dbContext)
+public class GetBooksQuery(BookStoreDbContext dbContext, IMapper mapper)
 {
     public List<BooksViewModel> Handle()
     {
         var bookList = dbContext.Books.OrderBy(x => x.Id).ToList<Book>();
-        List<BooksViewModel> vm = new List<BooksViewModel>();
-        foreach (var book in bookList)
-        {
-            vm.Add(new BooksViewModel()
-            {
-                Title = book.Title,
-                Genre = ((GenreEnum)book.GenreId).ToString(),
-                PublishDate = book.PublishDate.Date.ToString("dd/MM/yyy"),
-                PageCount = book.PageCount
-                
-            });
-        }
-
+        List<BooksViewModel> vm = mapper.Map<List<BooksViewModel>>(bookList);
+        
         return vm;
     }
 }

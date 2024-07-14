@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Reflection;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using patika_bookstore.DBOperations;
 
 namespace patika_bookstore;
-
 
 public class Startup(IConfiguration configuration)
 {
@@ -13,8 +13,12 @@ public class Startup(IConfiguration configuration)
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
-        services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo { Title = "Patika.Bookstore", Version = "v1" }); });
+        services.AddSwaggerGen(c =>
+        {
+            c.SwaggerDoc("v1", new OpenApiInfo { Title = "Patika.Bookstore", Version = "v1" });
+        });
         services.AddDbContext<BookStoreDbContext>(options => options.UseInMemoryDatabase(databaseName: "BookStoreDB"));
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

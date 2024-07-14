@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0qpdyS0TmpjFytkURc+4oj/D6D+wrfcqWUpLnjKK4yj6aOeDN/qsscUuKJZ3h39Y1o/5DZhEFopMPXejtZPqyw==",
+  "dgSpecHash": "0NTdNSNavarHqSchiD5aD2pHRNDMQ0vkMP3oF8tGfCiNYR0o1cRO5C6so1gTkC2GXvxW1hmLaPfbVggaRpYReg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ferha\\RiderProjects\\patika-bookstore\\patika-bookstore\\patika-bookstore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ferha\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\ferha\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\ferha\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.6\\microsoft.aspnetcore.openapi.8.0.6.nupkg.sha512",
     "C:\\Users\\ferha\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0-preview.6.24327.4\\microsoft.entityframeworkcore.9.0.0-preview.6.24327.4.nupkg.sha512",
     "C:\\Users\\ferha\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0-preview.6.24327.4\\microsoft.entityframeworkcore.abstractions.9.0.0-preview.6.24327.4.nupkg.sha512",

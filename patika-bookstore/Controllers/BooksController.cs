@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using FluentValidation;
+using Microsoft.AspNetCore.Mvc;
 using patika_bookstore.BookOperations.CreateBook;
 using patika_bookstore.BookOperations.DeleteBook;
 using patika_bookstore.BookOperations.GetBookDetail;
@@ -12,12 +14,12 @@ namespace patika_bookstore.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class BooksController(BookStoreDbContext context) : ControllerBase
+public class BooksController(BookStoreDbContext context, IMapper mapper) : ControllerBase
 {
     [HttpGet]
     public IActionResult GetBooks()
     {
-        GetBooksQuery query = new GetBooksQuery(context);
+        GetBooksQuery query = new GetBooksQuery(context, mapper);
         var result = query.Handle();
         return Ok(result);
     }
@@ -28,8 +30,10 @@ public class BooksController(BookStoreDbContext context) : ControllerBase
         BookDetailViewModel result;
         try
         {
-            GetBookDetailQuery query = new GetBookDetailQuery(context);
+            GetBookDetailQuery query = new GetBookDetailQuery(context, mapper);
             query.BookId = id;
+            GetBookDetailQueryValidator validator = new GetBookDetailQueryValidator();
+            validator.ValidateAndThrow(query);
             result = query.Handle();
         }
         catch (Exception e)
@@ -43,10 +47,12 @@ public class BooksController(BookStoreDbContext context) : ControllerBase
     [HttpPost]
     public IActionResult AddBook([FromBody] CreateBookCommand.CreateBookModel newBook)
     {
-        CreateBookCommand command = new CreateBookCommand(context);
+        CreateBookCommand command = new CreateBookCommand(context, mapper);
         try
         {
             command.Model = newBook;
+            CreateBookCommandValidator validator = new CreateBookCommandValidator();
+            validator.ValidateAndThrow(command);
             command.Handle();
         }
         catch (Exception e)
@@ -65,6 +71,8 @@ public class BooksController(BookStoreDbContext context) : ControllerBase
             UpdateBookCommand command = new UpdateBookCommand(context);
             command.BookId = id;
             command.Model = updateBook;
+            UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
+            validator.ValidateAndThrow(command);
             command.Handle();
         }
         catch (Exception e)
@@ -82,6 +90,8 @@ public class BooksController(BookStoreDbContext context) : ControllerBase
         {
             DeleteBookCommand command = new DeleteBookCommand(context);
             command.BookId = id;
+            DeleteBookCommandValidator validator = new DeleteBookCommandValidator();
+            validator.ValidateAndThrow(command);
             command.Handle();
         }
         catch (Exception e)

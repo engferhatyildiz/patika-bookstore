@@ -42,3 +42,6 @@ C:\Users\ferha\RiderProjects\patika-bookstore\patika-bookstore\obj\Debug\net8.0\
 C:\Users\ferha\RiderProjects\patika-bookstore\patika-bookstore\obj\Debug\net8.0\patika-bookstore.pdb
 C:\Users\ferha\RiderProjects\patika-bookstore\patika-bookstore\obj\Debug\net8.0\patika-bookstore.genruntimeconfig.cache
 C:\Users\ferha\RiderProjects\patika-bookstore\patika-bookstore\obj\Debug\net8.0\ref\patika-bookstore.dll
+C:\Users\ferha\RiderProjects\patika-bookstore\patika-bookstore\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ferha\RiderProjects\patika-bookstore\patika-bookstore\obj\Debug\net8.0\patika-bookstore.sourcelink.json
+C:\Users\ferha\RiderProjects\patika-bookstore\patika-bookstore\bin\Debug\net8.0\FluentValidation.dll

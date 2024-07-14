@@ -9,7 +9,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ed78422-6aeb-4b8c-932c-02ccdde79e76" name="Changes" comment="" />
+    <list default="true" id="4ed78422-6aeb-4b8c-932c-02ccdde79e76" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/patika-bookstore/BookOperations/CreateBook/CreateBookCommandValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patika-bookstore/BookOperations/DeleteBook/DeleteBookCommandValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patika-bookstore/BookOperations/GetBookDetail/GetBookDetailQueryValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patika-bookstore/BookOperations/UpdateBook/UpdateBookCommandValidator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patika-bookstore/Common/MappingProfile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.patika-bookstore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.patika-bookstore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/BookOperations/CreateBook/CreateBookCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/BookOperations/CreateBook/CreateBookCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/BookOperations/GetBookDetail/GetBookDetailQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/BookOperations/GetBookDetail/GetBookDetailQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/BookOperations/GetBooks/GetBooksQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/BookOperations/GetBooks/GetBooksQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/Controllers/BooksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/Controllers/BooksController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/bin/Debug/net8.0/patika-bookstore.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/bin/Debug/net8.0/patika-bookstore.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/bin/Debug/net8.0/patika-bookstore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/bin/Debug/net8.0/patika-bookstore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/bin/Debug/net8.0/patika-bookstore.exe" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/bin/Debug/net8.0/patika-bookstore.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/bin/Debug/net8.0/patika-bookstore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/bin/Debug/net8.0/patika-bookstore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/patika-bookstore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/ref/patika-bookstore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/ref/patika-bookstore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/refint/patika-bookstore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/Debug/net8.0/refint/patika-bookstore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/patika-bookstore.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/patika-bookstore.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patika-bookstore/patika-bookstore.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/patika-bookstore/patika-bookstore.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,38 +52,62 @@
   <component name="DpaMonitoringSettings">
     <option name="autoShow" value="false" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;engferhatyildiz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/engferhatyildiz/patika-bookstore.git&quot;,
+    &quot;accountId&quot;: &quot;52741a97-a211-4bc3-8059-98cf664ac9b3&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/b8139c5ee58f1708b0e3368a1b241400edd6cbc4/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/3b8b000a0e115700b18265d8ec8c6307056dc94d/src/coreclr/System.Private.CoreLib/src/System/Reflection/Assembly.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eec252cf40b8ff96a3a028a3eddc6ac8c0d3f385d85e6def3cfc7d63fbc5918e/DefaultValidatorExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2jCxtNlvBIla3oTtWhGs8pTYpAV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.patika-bookstore: IIS Express.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.patika-bookstore: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;IdeDotTraceSystemModulesPageId&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\ferha\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ferha\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\ferha\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\ferha\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\ferha\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\ferha\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.patika-bookstore: IIS Express">
     <configuration name="patika-bookstore: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/patika-bookstore/patika-bookstore.csproj" />
@@ -105,7 +163,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720905073830</updated>
-      <workItem from="1720905075121" duration="14040000" />
+      <workItem from="1720905075121" duration="19130000" />
+      <workItem from="1721032603830" duration="6215000" />
     </task>
     <servers />
   </component>

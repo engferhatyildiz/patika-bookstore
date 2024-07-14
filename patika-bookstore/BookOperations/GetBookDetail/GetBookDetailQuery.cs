@@ -1,9 +1,9 @@
-﻿using patika_bookstore.Common;
+﻿using AutoMapper;
 using patika_bookstore.DBOperations;
 
 namespace patika_bookstore.BookOperations.GetBookDetail;
 
-public class GetBookDetailQuery(BookStoreDbContext dbContext)
+public class GetBookDetailQuery(BookStoreDbContext dbContext, IMapper mapper)
 {
     public int BookId { get; set; }
 
@@ -15,11 +15,7 @@ public class GetBookDetailQuery(BookStoreDbContext dbContext)
             throw new InvalidOperationException("The Book does not found");
         }
 
-        BookDetailViewModel vm = new BookDetailViewModel();
-        vm.Title = book.Title;
-        vm.PageCount = book.PageCount;
-        vm.PublishDate = book.PublishDate.Date.ToString("dd/mm/yyyy");
-        vm.Genre = ((GenreEnum)book.GenreId).ToString();
+        BookDetailViewModel vm = mapper.Map<BookDetailViewModel>(book);
 
         return vm;
     }
